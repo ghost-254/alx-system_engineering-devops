@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l --block-size=K
+ls -l
