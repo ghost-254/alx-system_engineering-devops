@@ -1,0 +1,1 @@
+Today, I am happy to learn about project 0x01. Shell, permissions
