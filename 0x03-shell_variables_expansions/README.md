@@ -8,3 +8,4 @@ set | less : This script lists all local variables and environment variables, an
 BEST="School" : This script creates a new local variable with the name BEST and with the value of School.
 export BEST="School" : This script creates a new global variable
 echo $((128 + TRUEKNOWLEDGE)) : This script prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
+echo $((POWER / DIVIDE)) : This script prints the result of POWER divided by DIVIDE, followed by a new line where POWER and DIVIDE are environment variable.
