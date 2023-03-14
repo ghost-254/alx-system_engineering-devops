@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "The sum of WATER ($WATER) and STIR ($STIR) is $(echo "ibase=2#$(echo $WATER | tr -d '_') + 3#$(echo $STIR | tr -d '_')" | dc | tr -d '\' | tr -d '\n' | awk '{$1=$1;print}' OFS='.' | sed 's/\(^$\)/0/')."
