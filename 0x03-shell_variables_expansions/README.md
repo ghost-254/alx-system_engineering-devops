@@ -5,3 +5,4 @@ PATH=$PATH:/action : This script Add /action to the PATH. /action should be the 
 echo $(printf $PATH | tr ":" "\n" | wc -w) : This script counts the number of directories in the PATH.
 printenv : This script lists environment variables.
 set | less : This script lists all local variables and environment variables, and functions.
+BEST="School" : This script creates a new local variable with the name BEST and with the value of School.
