@@ -1,2 +1,2 @@
 #!/bin/bash 
-cat /etc/passwd | sort -k1 | cut -d ':' -f1,6
+awk -F: '{print $1 ":" $6}' /etc/passwd | sort -k1 | awk -F: 'BEGIN {printf "%-20s %s\n", "Username", "Home Directory"; printf"--------\n"} {printf "%-20s %s\n", $1, $2}'
