@@ -25,3 +25,4 @@ cat /etc/ssh/sshd_config | grep "^[a-zA-Z]" : This script displays all lines of 
 tr Ac Ze : This script replaces all characters A and c from input to Z and e respectively.
 tr -d cC : This script removes all letters c and C from input.
 rev : This script reverse its input.
+cat /etc/passwd | sort -k1 | cut -d ':' -f1,6 : This script displays all users and their home directories, sorted by users. Based on the the /etc/passwd file
