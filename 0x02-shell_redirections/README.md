@@ -29,3 +29,4 @@ cat /etc/passwd | sort -k1 | cut -d ':' -f1,6 : This script displays all users a
 find . -empty -printf '%f\n' : This script finds all empty files and directories in the current directory and all sub-directories.
 find . -type f -name "*.gif" -printf "%f\n" | rev | cut -d '.' -f2- | rev | LC_ALL=C sort -f : This script lists all the files with a .gif extension in the current directory and all its sub-directories. Hidden files are listed. Only regular files (not directories) are listed.
 The names of the files should be displayed without their extensions. The files are sorted by byte values, but case-insensitive (file aaa are listed before file bbb, file .b should be listed before file a, and file Rona should be listed after file jay). One file name per line. The listing should end with a new line
+echo -en $(cut -c1 | tr -d '\n')'\n' : This script decodes acrostics that use the first letter of each line.
