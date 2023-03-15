@@ -23,3 +23,4 @@ cat /etc/passwd | grep -v "bin" : This script displays all the lines in the file
 cat /etc/ssh/sshd_config | grep "^[a-zA-Z]" : This script displays all lines of the file /etc/ssh/sshd_config starting with a letter. It also includes capital letters as well.
 
 tr Ac Ze : This script replaces all characters A and c from input to Z and e respectively.
+tr -d cC : This script removes all letters c and C from input.
