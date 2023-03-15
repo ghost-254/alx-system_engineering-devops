@@ -19,3 +19,4 @@ cat /etc/passwd | grep "root" : This script displays lines containing the patter
 sort | uniq -u : This script  takes a list of words as input and prints only words that appear exactly once. It follows these additional requirements: 1) Input format: One line, one word; 2) Output format: One line, one word; and 3) Words should be sorted
 cat /etc/passwd | grep "bin" | wc -l : This script displays the number of lines that contain the pattern “bin” in the file /etc/passwd
 cat /etc/passwd | grep -A 3 "root" : This script displays lines containing the pattern “root” and 3 lines after them in the file /etc/passwd
+cat /etc/passwd | grep -v "bin" : This script displays all the lines in the file /etc/passwd that do not contain the pattern “bin”.
